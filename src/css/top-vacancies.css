@@ -1,0 +1,109 @@
+.hot-vacancies {
+  margin-top: 45px;
+  padding-bottom: 70px;
+}
+
+.hot-vacancies-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hot-vacancies-title {
+  margin: 15px 15px 0 15px;
+}
+
+.hot-vacancies-title h3 {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+.hot-vacancies-title .after {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hot-vacancies-title .after-line {
+  content: "";
+  width: 35px;
+  height: 3px;
+  background-color: c;
+  display: block;
+  border-radius: 3px;
+}
+
+.hot-vacancies-title .line-1, .hot-vacancies-title .line-3 {
+  width: 95px;
+}
+
+.hot-vacancies-columns {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-column, .right-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-column .column-item, .right-column .column-item {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  background-color: #22A0AB;
+  border-radius: 20px;
+  padding: 20px 35px;
+  margin: 25px 0px;
+  box-shadow: 0px 24px 60px -20px #2CCFDDCC, 0px 8px 40px -14px #2CD5E3E5;
+}
+
+.column-item .item-icon {
+  margin: 0 15px;
+  height: 102px;
+  width: 62px;
+  background-image: url("../img/Vector.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.column-item .item-inner {
+  margin-left: 25px;
+}
+
+.column-item .item-inner .item-title {
+  margin-top: 7px;
+}
+
+.item-title h5 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.item-salary {
+  margin-top: 12px;
+}
+
+.item-salary h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.item-company-name {
+  margin-top: 8px;
+}
+
+.item-company-name p {
+  font-size: 14px;
+  font-weight: 300;
+}

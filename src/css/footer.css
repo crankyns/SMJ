@@ -1,0 +1,51 @@
+footer {
+  padding: 20px 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1B5766;
+  padding-bottom: 40px;
+}
+
+footer .footer-logo a div {
+  margin: 25px 5px;
+  margin-left: -35px;
+  height: 60px;
+  width: 200px;
+  background-image: url("../img/logo-FMJ.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+footer .footer-info h5, .footer-help h5, .footer-contacts h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+footer .footer-info p a, .footer-help p a, .footer-contacts p a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px; 
+  font-weight: 400;
+  color: #000;
+}
+
+footer .footer-links ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .footer-links ul li {
+  margin: 8px;
+}
+
+footer .footer-links ul li a i {
+  font-size: 25px;
+  color: #000;
+}

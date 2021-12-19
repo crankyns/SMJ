@@ -1,0 +1,111 @@
+.main {
+  margin-bottom: 140px;
+}
+ 
+.main-container-39 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-container-39 .left-side, .main-container-39 .right-side {
+  max-width: 46%;
+}
+
+.main-container-39 .left-side {
+  margin: 85px 15px 0 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-container-39 .left-side .main-title {
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
+.main-container-39 .left-side .main-title h5 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.main-container-39 .left-side .main-input-search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 45px;
+  padding: 15px;
+  width: 75%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 8px 40px -14px #808080CC, 0px 24px 60px -20px #595959E5;
+}
+
+.main-container-39 .left-side .main-input-search input {
+  margin-right: 5px;
+  padding: 5px 15px;
+  height: 25px;
+  width: 55%;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(196, 196, 196, 60%);
+}
+
+.main-container-39 .left-side .main-input-search button {
+  margin-left: 5px;
+  padding: 8.5px 15px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F8AC18;
+  font-weight: 400;
+}
+
+.global-count-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+  margin: 105px -15px 0 -15px;
+}
+
+.global-count-list .list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 15px;
+  width: 135px;
+  height: 75px;
+  background-color: #22A0AB;
+  border-radius: 20px;
+  box-shadow: 0px 24px 60px -20px #2CCFDDCC, 0px 8px 40px -14px #2CD5E3E5;
+}
+
+.global-count-list .list-item p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.main-container-39 .right-side {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60%;
+  height: 650px;
+  background: url("../img/background-main-39.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0px 0px 0px 190px;
+  z-index: -1;
+}

@@ -1,0 +1,195 @@
+.user-profile-section {
+  padding:  80px 0;
+}
+
+.user-profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.user-personal-info-side {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.profile-photo-name-and-links {
+  margin: 20px 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  border: 1px solid #F8AC18;
+  background-image: url("../img/user-prof-pic.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.user-name {
+  max-width: 180px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.user-name h6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user-personal-links {
+  margin-top: 15px;
+}
+
+.user-personal-links ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.user-personal-links ul li a i {
+  margin: 7px;
+  font-size: 22px;
+  color: #000;
+}
+
+.user-profile-information {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile-information ul li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+} 
+
+.user-profile-information ul li .item-title {
+  margin-top: 15px;
+  width: 21%;
+}
+
+.user-profile-information ul li .item-descp {
+  width: 45%;
+  margin-top: 15px;
+}
+
+.user-profile-information ul li .edit-item {
+  width: 19%;
+  margin-top: 15px;
+}
+
+.user-profile-information ul li p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user-profile-information ul .work-expirience .item-descp .work-descp .work-company-name {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.user-profile-information ul .work-expirience .item-descp .work-descp .work-company-name::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #000;
+  margin: 10px 0;
+  display: block;
+  opacity: 0.7;
+}
+
+.work-descp .work-responsobilities {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-descp .work-responsobilities p {
+  margin: 10px 0;
+}
+
+.work-descp .work-responsobilities ul li p {
+  margin: 0;
+}
+
+.user-profile-information ul li .edit-item {
+  color: #F8AC18;
+  cursor: pointer;
+}
+
+.user-profile-information ul li .edit-item i {
+  margin: 0 5px;
+  font-size: 11px;
+}
+
+.user-special-recommendations-side {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recommendations-for-user {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #22A0AB;
+  box-shadow: 0px 8px 40px -14px #2CCFDDCC, 0px 24px 60px -20px #2CD5E3E5;
+}
+
+.recommendations-for-user .recommendations-title {
+  margin-bottom: 15px;
+}
+
+.recommendations-for-user .recommendations-title h4 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.recommendations-for-user .recommendation-item {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+
+.recommendations-for-user .recommendation-item .recommendation-title {
+  margin-top: 7px;
+}
+
+.recommendations-for-user .recommendation-item .recommendation-title h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.recommendations-for-user .recommendation-item .recommendation-salary {
+  margin-top: 5px;
+}
+
+.recommendations-for-user .recommendation-item .recommendation-salary p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.recommendations-for-user .recommendation-item .recommendation-employer {
+  margin-top: 5px;
+}
+
+.recommendations-for-user .recommendation-item .recommendation-employer p {
+  font-size: 12px;
+  font-weight: 300;
+}

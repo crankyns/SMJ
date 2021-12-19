@@ -1,0 +1,156 @@
+.sign-up-section {
+  padding: 75px 0;
+  position: relative;
+}
+
+.sign-up-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sign-up-form-side {
+  max-width: 600px;
+  text-align: center;
+}
+
+.sign-up-form-side .form-header-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.candidate-sign-up-title h4, .employer-sign-up-title h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 25px;
+}
+
+.sign-up-form-side .form-header-description {
+  margin-top: 15px;
+}
+
+.sign-up-form-side .form-header-description p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sign-up-form::before, .sing-up-form-bottom::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #7709AB;
+  display: block;
+  margin: 20px auto;
+  opacity: 0.2;
+}
+
+.sing-up-form-bottom::before {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.personal-info-inputs-raw, .user-set-inputs-raw {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name-input, .surname-input, .user-set-inputs-raw .login-input, .user-set-inputs-raw .password-input {
+  width: 48%;
+}
+
+.name-label, .surname-label, .user-set-inputs-raw .login-input .login-label, .user-set-inputs-raw .password-input .password-label {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name-input-label, .surname-input-label, .user-set-inputs-raw .login-input .login-label .login-input-label, .user-set-inputs-raw .password-input .password-label .password-input-label  {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.more-info-username, .more-info-user-surname, .user-set-inputs-raw .login-input .login-label .more-info-login, .user-set-inputs-raw .password-input .password-label .more-info-password {
+  font-size: 10px;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+#user-name-input, #user-surname-input, .user-set-inputs-raw .login-input #login-input, .user-set-inputs-raw .password-input #password-input {
+  margin-top: 8px;
+  width: 93%;
+  border: 1px solid #F8AC18;
+  font-size: 13px;
+  padding: 10px;
+  outline: none;
+}
+
+#user-name-input::placeholder, #user-surname-input::placeholder, .user-set-inputs-raw .login-input #login-input::placeholder, .user-set-inputs-raw .password-input #password-input::placeholder {
+  color: #000;
+  opacity: 0.4;
+}
+
+.sing-up-form-bottom .inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accept-terms {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#terms {
+  margin: 5px;
+  outline: none;
+}
+
+.terms-label {
+  margin-left: 15px;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.terms-label p span {
+  color: #F8AC18;
+}
+
+.sing-up-form-bottom .inner button {
+  border: none;
+  border-radius: 5px;
+  background-color: #F8AC18;
+  padding: 10px 23px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sign-up-background-pic-side {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 40%;
+  height: 400px;
+  background: url("../img/sing-up-background-pic.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 210px 0;
+  z-index: -1;
+}
