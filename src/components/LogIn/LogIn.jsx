@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Footer } from "../Footer";
 import { Header } from "../Header";
 
 export const LogIn = () => {
+  const [login, setLogin] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleInputLogin = (e) => {
+    setLogin(e.target.value);
+    console.log(login);
+  };
+
+  const handleInputPassword = (e) => {
+    setPassword(e.target.value);
+    console.log(password);
+  };
+
   return (
     <>
       <Header />
@@ -31,7 +44,13 @@ export const LogIn = () => {
                   <i class="fas fa-question-circle"></i>
                 </div>
               </div>
-              <input type="tel" id="login-input" placeholder="Номер телефона" />
+              <input
+                type="tel"
+                id="login-input"
+                placeholder="Номер телефона"
+                value={login}
+                onChange={handleInputLogin}
+              />
               <div className="password-label">
                 <label
                   className="password-input-label"
@@ -43,7 +62,13 @@ export const LogIn = () => {
                   <i class="fas fa-question-circle"></i>
                 </div>
               </div>
-              <input type="password" id="password-input" placeholder="Пароль" />
+              <input
+                type="password"
+                id="password-input"
+                placeholder="Пароль"
+                value={password}
+                onChange={handleInputPassword}
+              />
               <div className="forgotten-password">
                 <a href="/">
                   <p>Забыли пароль?</p>

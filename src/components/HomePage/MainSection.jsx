@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const MainSection = () => {
+  const [search, setSearch] = useState("");
+
+  const handleInputSearch = (e) => {
+    setSearch(e.target.value);
+    console.log(search);
+  };
+
   return (
     <section className="main">
       <div className="container main-container-39">
@@ -12,7 +19,12 @@ export const MainSection = () => {
             </h5>
           </div>
           <div className="main-input-search">
-            <input type="text" placeholder="Поиск" />
+            <input
+              type="text"
+              placeholder="Поиск"
+              value={search}
+              onChange={handleInputSearch}
+            />
             <button>Поиск работы</button>
           </div>
           <div className="global-count-list">

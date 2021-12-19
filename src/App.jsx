@@ -7,8 +7,8 @@ import { UserProfile } from "./components/UserProfile/UserProfile";
 export const App = () => {
   return (
     <>
-      <HomePage />
-      {/* <SignUp /> */}
+      {/* <HomePage /> */}
+      <SignUp />
       {/* <LogIn /> */}
       {/* <UserProfile /> */}
     </>

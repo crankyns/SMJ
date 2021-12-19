@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { Footer } from "../Footer";
 import { Header } from "../Header";
 
 export const SignUp = () => {
+  const [name, setName] = useState("");
+  const [surname, setSurname] = useState("");
+  const [login, setLogin] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleInputName = (e) => {
+    setName(e.target.value);
+    console.log(name);
+  };
+  const handleInputSurname = (e) => {
+    setSurname(e.target.value);
+    console.log(surname);
+  };
+  const handleInputLogin = (e) => {
+    setLogin(e.target.value);
+    console.log(login);
+  };
+  const handleInputPassword = (e) => {
+    setPassword(e.target.value);
+    console.log(password);
+  };
+
   return (
     <>
       <Header />
@@ -38,7 +60,13 @@ export const SignUp = () => {
                       <i class="fas fa-question-circle"></i>
                     </div>
                   </div>
-                  <input type="text" id="user-name-input" placeholder="Имя" />
+                  <input
+                    type="text"
+                    id="user-name-input"
+                    placeholder="Имя"
+                    value={name}
+                    onChange={handleInputName}
+                  />
                 </div>
                 <div className="surname-input">
                   <div className="surname-label">
@@ -56,6 +84,8 @@ export const SignUp = () => {
                     type="text"
                     id="user-surname-input"
                     placeholder="Фамилия"
+                    value={surname}
+                    onChange={handleInputSurname}
                   />
                 </div>
               </div>
@@ -73,6 +103,8 @@ export const SignUp = () => {
                     type="text"
                     id="login-input"
                     placeholder="Номер телефона"
+                    value={login}
+                    onChange={handleInputLogin}
                   />
                 </div>
                 <div className="password-input">
@@ -87,7 +119,13 @@ export const SignUp = () => {
                       <i class="fas fa-question-circle"></i>
                     </div>
                   </div>
-                  <input type="text" id="password-input" placeholder="Пароль" />
+                  <input
+                    type="text"
+                    id="password-input"
+                    placeholder="Пароль"
+                    value={password}
+                    onChange={handleInputPassword}
+                  />
                 </div>
               </div>
               <div className="sing-up-form-bottom">
