@@ -5,7 +5,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-header .header-logo a div {
+header .header-logo div {
   margin-left: -75px;
   margin-top: 8px;
   height: 60px;
@@ -37,10 +37,24 @@ header nav .links li, header nav .buttons li {
   padding: 10px 15px;
 }
 
-header nav .links li a {
+header nav .links li p {
+  display: inline-block;
   color: #000;
   font-size: 17px;
   font-weight: 700;
+}
+
+header nav .links li p::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #000;
+  transition: 0.3s ease;
+}
+
+header nav .links li p:hover::after {
+  width: 100%;
 }
 
 header nav .buttons li {
@@ -53,22 +67,59 @@ header nav .buttons .registration {
 }
 
 
-header nav .buttons .registration a {
+header nav .buttons .registration p {
+  display: inline-block;
   color: #000;
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Roboto', sans-serif;
 }
 
+header nav .buttons .registration p::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #000;
+  transition: 0.3s ease;
+}
+
+header nav .buttons .registration p:hover::after {
+  width: 100%;
+}
+
 header .buttons li {
-  border: 1.5px solid #F8AC18;
+  border: 3px solid #F8AC18;
   background-color: white;
   border-radius: 5px;
 }
 
-header nav .buttons li a {
+header nav .buttons .login p::after, header nav .buttons .location p::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #F8AC18;
+  transition: 0.3s ease;
+}
+
+header nav .buttons .login p:hover::after, header nav .buttons .location p:hover::after {
+  width: 100%;
+}
+
+header nav .buttons .login p, header nav .buttons .location p {
+  display: inline-block;
   color: #F8AC18;
-  font-weight: 400;
+  font-weight: 600;
   font-family: 'Roboto', sans-serif;
+}
+
+header nav .buttons .location, header nav .buttons .login {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 header nav .buttons .location i {

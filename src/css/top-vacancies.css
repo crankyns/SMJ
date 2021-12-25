@@ -17,6 +17,7 @@
   font-size: 30px;
   line-height: 34px;
   font-weight: 700;
+  cursor: default;
 }
 
 .hot-vacancies-title .after {
@@ -31,7 +32,7 @@
   content: "";
   width: 35px;
   height: 3px;
-  background-color: c;
+  background-color: #7709AB;
   display: block;
   border-radius: 3px;
 }
@@ -66,7 +67,14 @@
   padding: 20px 35px;
   margin: 25px 0px;
   box-shadow: 0px 24px 60px -20px #2CCFDDCC, 0px 8px 40px -14px #2CD5E3E5;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
+
+.left-column .column-item:hover, .right-column .column-item:hover {
+  transform: translate(0px, -15px);
+}
+
 
 .column-item .item-icon {
   margin: 0 15px;
@@ -78,6 +86,7 @@
 }
 
 .column-item .item-inner {
+  color: #000;
   margin-left: 25px;
 }
 

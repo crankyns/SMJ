@@ -30,6 +30,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+  cursor: default;
 }
 
 .main-container-39 .left-side .main-input-search {
@@ -56,6 +57,11 @@
   border: none;
   border-radius: 5px;
   background-color: rgba(196, 196, 196, 60%);
+  transition: 0.3s ease;
+}
+
+.main-container-39 .left-side .main-input-search input:hover, .main-container-39 .left-side .main-input-search input:focus {
+  background-color: rgba(196, 196, 196, 80%);
 }
 
 .main-container-39 .left-side .main-input-search button {
@@ -65,7 +71,13 @@
   border: none;
   border-radius: 5px;
   background-color: #F8AC18;
-  font-weight: 400;
+  font-weight: 700;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.main-container-39 .left-side .main-input-search button:focus {
+  transform: scale(0.95, 0.95);
 }
 
 .global-count-list {
@@ -89,10 +101,16 @@
   background-color: #22A0AB;
   border-radius: 20px;
   box-shadow: 0px 24px 60px -20px #2CCFDDCC, 0px 8px 40px -14px #2CD5E3E5;
+  transition: 0.3s ease;
+}
+
+.global-count-list .list-item:hover {
+  transform: scale(1.2, 1.2);
+  cursor: default;
 }
 
 .global-count-list .list-item p {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 15px;
   line-height: 20px;
 }

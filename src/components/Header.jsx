@@ -1,38 +1,49 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
     <header>
       <div className="header-logo">
-        <a href="/">
+        <Link to="/">
           <div></div>
-        </a>
+        </Link>
       </div>
       <nav>
         <ul className="links">
           <li className="home">
-            <a href="/">Home</a>
+            <Link to="/">
+              <p>Home</p>
+            </Link>
           </li>
           <li className="junior">
-            <a href="/">Junior</a>
+            <Link to="junior">
+              <p>Junior</p>
+            </Link>
           </li>
           <li className="middle">
-            <a href="/">Middle</a>
+            <Link to="middle">
+              <p>Middle</p>
+            </Link>
           </li>
           <li className="senior">
-            <a href="/">Senior</a>
+            <Link to="senior">
+              <p>Senior</p>
+            </Link>
           </li>
         </ul>
         <ul className="buttons">
-          <li className="registration">
-            <a href="/">Регистрация</a>
-          </li>
-          <li className="login">
-            <a href="/">Вход</a>
-          </li>
+          <Link to="sign-up">
+            <li className="registration">
+              <p>Регистрация</p>
+            </li>
+          </Link>
+          <Link to="log-in">
+            <li className="login">
+              <p>Вход</p>
+            </li>
+          </Link>
           <li className="location">
-            <a href="/">Локация</a>
+            <p>Локация</p>
             <i class="fas fa-map-marker-alt"></i>
           </li>
         </ul>

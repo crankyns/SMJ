@@ -1,28 +1,19 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Footer } from "../Footer";
 import { Header } from "../Header";
+import { SignUpForm } from "./SignUpForm";
 
 export const SignUp = () => {
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
-  const [login, setLogin] = useState("");
-  const [password, setPassword] = useState("");
+  const [candidate, setCandidate] = useState(true);
+  const [employer, setEmployer] = useState(false);
 
-  const handleInputName = (e) => {
-    setName(e.target.value);
-    console.log(name);
+  const chooseCandidate = () => {
+    setCandidate(true);
+    setEmployer(false);
   };
-  const handleInputSurname = (e) => {
-    setSurname(e.target.value);
-    console.log(surname);
-  };
-  const handleInputLogin = (e) => {
-    setLogin(e.target.value);
-    console.log(login);
-  };
-  const handleInputPassword = (e) => {
-    setPassword(e.target.value);
-    console.log(password);
+  const chooseEmployer = () => {
+    setEmployer(true);
+    setCandidate(false);
   };
 
   return (
@@ -33,10 +24,20 @@ export const SignUp = () => {
           <div className="sign-up-form-side">
             <div className="form-header-title">
               <div className="candidate-sign-up-title">
-                <h4>Соискатель</h4>
+                <h4
+                  className={`${candidate ? "true" : ""} `}
+                  onClick={chooseCandidate}
+                >
+                  Соискатель
+                </h4>
               </div>
               <div className="employer-sign-up-title">
-                <h4>Работодатель</h4>
+                <h4
+                  onClick={chooseEmployer}
+                  className={`${employer ? "true" : ""} `}
+                >
+                  Работодатель
+                </h4>
               </div>
             </div>
             <div className="form-header-description">
@@ -46,105 +47,7 @@ export const SignUp = () => {
                 прочтите их внимательно.
               </p>
             </div>
-            <form action="" className="sign-up-form">
-              <div className="personal-info-inputs-raw">
-                <div className="name-input">
-                  <div className="name-label">
-                    <label
-                      className="name-input-label"
-                      htmlFor="user-name-input"
-                    >
-                      <p>Имя</p>
-                    </label>
-                    <div className="more-info-username">
-                      <i class="fas fa-question-circle"></i>
-                    </div>
-                  </div>
-                  <input
-                    type="text"
-                    id="user-name-input"
-                    placeholder="Имя"
-                    value={name}
-                    onChange={handleInputName}
-                  />
-                </div>
-                <div className="surname-input">
-                  <div className="surname-label">
-                    <label
-                      className="surname-input-label"
-                      htmlFor="user-surname-input"
-                    >
-                      <p>Фамилия</p>
-                    </label>
-                    <div className="more-info-user-surname">
-                      <i class="fas fa-question-circle"></i>
-                    </div>
-                  </div>
-                  <input
-                    type="text"
-                    id="user-surname-input"
-                    placeholder="Фамилия"
-                    value={surname}
-                    onChange={handleInputSurname}
-                  />
-                </div>
-              </div>
-              <div className="user-set-inputs-raw">
-                <div className="login-input">
-                  <div className="login-label">
-                    <label className="login-input-label" htmlFor="login-input">
-                      <p>Логин</p>
-                    </label>
-                    <div className="more-info-login">
-                      <i class="fas fa-question-circle"></i>
-                    </div>
-                  </div>
-                  <input
-                    type="text"
-                    id="login-input"
-                    placeholder="Номер телефона"
-                    value={login}
-                    onChange={handleInputLogin}
-                  />
-                </div>
-                <div className="password-input">
-                  <div className="password-label">
-                    <label
-                      className="password-input-label"
-                      htmlFor="password-input"
-                    >
-                      <p>Пароль</p>
-                    </label>
-                    <div className="more-info-password">
-                      <i class="fas fa-question-circle"></i>
-                    </div>
-                  </div>
-                  <input
-                    type="text"
-                    id="password-input"
-                    placeholder="Пароль"
-                    value={password}
-                    onChange={handleInputPassword}
-                  />
-                </div>
-              </div>
-              <div className="sing-up-form-bottom">
-                <div className="inner">
-                  <div className="accept-terms">
-                    <input type="checkbox" id="terms" />
-                    <label htmlFor="terms" className="terms-label">
-                      <p>
-                        Я согласен с
-                        <a href="/">
-                          <span> условиями</span>
-                        </a>
-                      </p>
-                    </label>
-                  </div>
-                  <button>Регистрация</button>
-                </div>
-              </div>
-            </form>
+            <SignUpForm />
           </div>
           <div className="sign-up-background-pic-side"></div>
         </div>

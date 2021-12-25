@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { CounterCard } from "./CounterCard";
 
 export const MainSection = () => {
   const [search, setSearch] = useState("");
@@ -6,6 +7,10 @@ export const MainSection = () => {
   const handleInputSearch = (e) => {
     setSearch(e.target.value);
     console.log(search);
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
   };
 
   return (
@@ -18,28 +23,21 @@ export const MainSection = () => {
               Работа найдётся и для тебя!
             </h5>
           </div>
-          <div className="main-input-search">
+          <form className="main-input-search" onSubmit={onSubmit}>
             <input
               type="text"
               placeholder="Поиск"
               value={search}
               onChange={handleInputSearch}
             />
-            <button>Поиск работы</button>
-          </div>
+            <button type="submit">
+              <p>Поиск работы</p>
+            </button>
+          </form>
           <div className="global-count-list">
-            <div className="list-item vacancies-item">
-              <p className="item-number vacancies-number">10000</p>
-              <p className="item-text vacancies-text">Вакансий</p>
-            </div>
-            <div className="list-item cv-item">
-              <p className="item-number cv-number">5000</p>
-              <p className="item-text cv-text">Резюме</p>
-            </div>
-            <div className="list-item candidates-item">
-              <p className="item-number candidates-number">2000</p>
-              <p className="item-text candidates-text">Соискателей</p>
-            </div>
+            <CounterCard numberCount={"1000"} cardText={"Вакансии"} />
+            <CounterCard numberCount={"5000"} cardText={"Резюме"} />
+            <CounterCard numberCount={"2000"} cardText={"Соискателей"} />
           </div>
         </div>
         <div className="right-side"></div>

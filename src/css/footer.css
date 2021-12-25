@@ -1,12 +1,12 @@
 footer {
-  padding: 20px 10%;
+  padding: 15px 10%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
   background-color: #1B5766;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 footer .footer-logo a div {
@@ -24,14 +24,17 @@ footer .footer-info h5, .footer-help h5, .footer-contacts h5 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 7px;
+  cursor: default;
 }
 
-footer .footer-info p a, .footer-help p a, .footer-contacts p a {
+footer .footer-info a p, .footer-help a p, .footer-contacts a p {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px; 
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 28px;
   color: #000;
 }
+
 
 footer .footer-links ul {
   display: flex;
@@ -43,9 +46,15 @@ footer .footer-links ul {
 
 footer .footer-links ul li {
   margin: 8px;
+  transition: 0.5s ease;
+}
+
+footer .footer-links ul li:hover {
+  transform: scale(1.5, 1.5);
 }
 
 footer .footer-links ul li a i {
   font-size: 25px;
   color: #000;
 }
+
