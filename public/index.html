@@ -1,21 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>FindMyJob</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="/src/css/App.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="header-logo">
+      <a href="">
+        <div></div>
+      </a>
+    </div>
+    <nav>
+      <ul class="links">
+        <li class="home">
+          <a href="">
+            <p>Home</p>
+          </a>
+        </li>
+        <li class="junior">
+          <a href="">
+            <p>Junior</p>
+          </a>
+        </li>
+        <li class="middle">
+          <a href="">
+            <p>Middle</p>
+          </a>
+        </li>
+        <li class="senior">
+          <a href="">
+            <p>Senior</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="buttons">
+        <a href="./sign-up.html">
+          <li class="registration">
+            <p>Регистрация</p>
+          </li>
+        </a>
+        <a href="./log-in.html">
+          <li class="login">
+            <p>Вход</p>
+          </li>
+        </a>
+        <li class="location">
+          <p>Локация</p>
+          <i class="fas fa-map-marker-alt"></i>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="main">
+    <div class="container main-container-39">
+      <div class="left-side">
+        <div class="main-title">
+          <h5>
+            Не сомневайся, ты именно тот. <br />
+            Работа найдётся и для тебя!
+          </h5>
+        </div>
+        <form class="main-input-search">
+          <input
+            type="text"
+            placeholder="Поиск"
+            value="Поиск"
+          />
+          <button type="submit">
+            <p>Поиск работы</p>
+          </button>
+        </form>
+        <div class="global-count-list">
+          <div class="list-item">
+            <p class="item-number">1000</p>
+            <p class="item-text">Вакансии</p>
+          </div>
+          <div class="list-item">
+            <p class="item-number">5000</p>
+            <p class="item-text">Резюме</p>
+          </div>
+          <div class="list-item">
+            <p class="item-number">2000</p>
+            <p class="item-text">Соискателей</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-side"></div>
+    </div>
+  </section>
+  <section class="hot-vacancies">
+    <div class="container hot-vacancies-container">
+      <div class="hot-vacancies-title">
+        <h3>Популярные вакансии</h3>
+        <div class="after">
+          <div class="after-line line-1"></div>
+          <div class="after-line line-2"></div>
+          <div class="after-line line-3"></div>
+        </div>
+      </div>
+      <div class="hot-vacancies-columns">
+        <div class="left-column">
+          <div class="column-item">
+            <div class="item-icon"></div>
+            <a href="">
+              <div class="item-inner">
+                <div class="item-title">
+                  <h5>Senior UI/UX Designer</h5>
+                </div>
+                <div class="item-salary">
+                  <h6>от 2500 до 3000 бел. руб.</h6>
+                </div>
+                <div class="item-company-name">
+                  <p>Wargaming, Минск</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="column-item">
+            <div class="item-icon"></div>
+            <a href="">
+              <div class="item-inner">
+                <div class="item-title">
+                  <h5>Senior UI/UX Designer</h5>
+                </div>
+                <div class="item-salary">
+                  <h6>от 2500 до 3000 бел. руб.</h6>
+                </div>
+                <div class="item-company-name">
+                  <p>Wargaming, Минск</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="column-item">
+            <div class="item-icon"></div>
+            <a href="">
+              <div class="item-inner">
+                <div class="item-title">
+                  <h5>Senior UI/UX Designer</h5>
+                </div>
+                <div class="item-salary">
+                  <h6>от 2500 до 3000 бел. руб.</h6>
+                </div>
+                <div class="item-company-name">
+                  <p>Wargaming, Минск</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="column-item">
+            <div class="item-icon"></div>
+            <a href="">
+              <div class="item-inner">
+                <div class="item-title">
+                  <h5>Senior UI/UX Designer</h5>
+                </div>
+                <div class="item-salary">
+                  <h6>от 2500 до 3000 бел. руб.</h6>
+                </div>
+                <div class="item-company-name">
+                  <p>Wargaming, Минск</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="column-item">
+            <div class="item-icon"></div>
+            <a href="">
+              <div class="item-inner">
+                <div class="item-title">
+                  <h5>Senior UI/UX Designer</h5>
+                </div>
+                <div class="item-salary">
+                  <h6>от 2500 до 3000 бел. руб.</h6>
+                </div>
+                <div class="item-company-name">
+                  <p>Wargaming, Минск</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="column-item">
+            <div class="item-icon"></div>
+            <a href="">
+              <div class="item-inner">
+                <div class="item-title">
+                  <h5>Senior UI/UX Designer</h5>
+                </div>
+                <div class="item-salary">
+                  <h6>от 2500 до 3000 бел. руб.</h6>
+                </div>
+                <div class="item-company-name">
+                  <p>Wargaming, Минск</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="list-of-vacancies">
+    <div class="container list-of-vacancies-container">
+      <div class="list-title">
+        <h3>Каталог вакансий</h3>
+      </div>
+      <div class="list-of-vacancies-rows">
+        <div class="vacancies-row first-row">
+          <div class="row-item" style="border-right: 2px solid #7709AB">
+            <a href="">
+              <div class="row-title">
+                <h5>Junior Software Engineer</h5>
+              </div>
+            </a>
+            <div class="row-salary">
+              <h6>от 2500 до 300 бел. руб.</h6>
+            </div>
+            <div class="row-location">
+              <p>Warming, Минск</p>
+            </div>
+          </div>
+          <div class="row-item" style="border-right: 2px solid #7709AB">
+            <a href="">
+              <div class="row-title">
+                <h5>Junior Software Engineer</h5>
+              </div>
+            </a>
+            <div class="row-salary">
+              <h6>от 2500 до 300 бел. руб.</h6>
+            </div>
+            <div class="row-location">
+              <p>Warming, Минск</p>
+            </div>
+          </div>
+          <div class="row-item">
+            <a href="">
+              <div class="row-title">
+                <h5>Junior Software Engineer</h5>
+              </div>
+            </a>
+            <div class="row-salary">
+              <h6>от 2500 до 300 бел. руб.</h6>
+            </div>
+            <div class="row-location">
+              <p>Warming, Минск</p>
+            </div>
+          </div>
+        </div>
+        <div class="vacancies-row second-row">
+          <div class="row-item" style="border-right: 2px solid #7709AB">
+            <a href="">
+              <div class="row-title">
+                <h5>Junior Software Engineer</h5>
+              </div>
+            </a>
+            <div class="row-salary">
+              <h6>от 2500 до 300 бел. руб.</h6>
+            </div>
+            <div class="row-location">
+              <p>Warming, Минск</p>
+            </div>
+          </div>
+          <div class="row-item" style="border-right: 2px solid #7709AB">
+            <a href="">
+              <div class="row-title">
+                <h5>Junior Software Engineer</h5>
+              </div>
+            </a>
+            <div class="row-salary">
+              <h6>от 2500 до 300 бел. руб.</h6>
+            </div>
+            <div class="row-location">
+              <p>Warming, Минск</p>
+            </div>
+          </div>
+          <div class="row-item">
+            <a href="">
+              <div class="row-title">
+                <h5>Junior Software Engineer</h5>
+              </div>
+            </a>
+            <div class="row-salary">
+              <h6>от 2500 до 300 бел. руб.</h6>
+            </div>
+            <div class="row-location">
+              <p>Warming, Минск</p>
+            </div>
+          </div>
+        </div>
+        <div class="vacancies-row third-row">
+          <div class="row-item" style="border-right: 2px solid #7709AB">
+            <a href="">
+              <div class="row-title">
+                <h5>Junior Software Engineer</h5>
+              </div>
+            </a>
+            <div class="row-salary">
+              <h6>от 2500 до 300 бел. руб.</h6>
+            </div>
+            <div class="row-location">
+              <p>Warming, Минск</p>
+            </div>
+          </div>
+          <div class="row-item" style="border-right: 2px solid #7709AB">
+            <a href="">
+              <div class="row-title">
+                <h5>Junior Software Engineer</h5>
+              </div>
+            </a>
+            <div class="row-salary">
+              <h6>от 2500 до 300 бел. руб.</h6>
+            </div>
+            <div class="row-location">
+              <p>Warming, Минск</p>
+            </div>
+          </div>
+          <div class="row-item">
+            <a href="">
+              <div class="row-title">
+                <h5>Junior Software Engineer</h5>
+              </div>
+            </a>
+            <div class="row-salary">
+              <h6>от 2500 до 300 бел. руб.</h6>
+            </div>
+            <div class="row-location">
+              <p>Warming, Минск</p>
+            </div>
+          </div>
+        </div>
+        <div class="vacancies-row fourth-row">
+          <div class="row-item" style="border-right: 2px solid #7709AB">
+            <a href="">
+              <div class="row-title">
+                <h5>Junior Software Engineer</h5>
+              </div>
+            </a>
+            <div class="row-salary">
+              <h6>от 2500 до 300 бел. руб.</h6>
+            </div>
+            <div class="row-location">
+              <p>Warming, Минск</p>
+            </div>
+          </div>
+          <div class="row-item" style="border-right: 2px solid #7709AB">
+            <a href="">
+              <div class="row-title">
+                <h5>Junior Software Engineer</h5>
+              </div>
+            </a>
+            <div class="row-salary">
+              <h6>от 2500 до 300 бел. руб.</h6>
+            </div>
+            <div class="row-location">
+              <p>Warming, Минск</p>
+            </div>
+          </div>
+          <div class="row-item">
+            <a href="">
+              <div class="row-title">
+                <h5>Junior Software Engineer</h5>
+              </div>
+            </a>
+            <div class="row-salary">
+              <h6>от 2500 до 300 бел. руб.</h6>
+            </div>
+            <div class="row-location">
+              <p>Warming, Минск</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-logo">
+      <a href="">
+        <div></div>
+      </a>
+    </div>
+    <div class="footer-info">
+      <div>
+        <h5>Информация</h5>
+        <a href="">
+          <p>Список вакансий</p>
+        </L>
+        <a href="">
+          <p>Каталог вакансий</p>
+        </a>
+      </div>
+    </div>
+    <div class="footer-help">
+      <div>
+        <h5>Помощь</h5>
+        <a href="">
+          <p>Часто задаваемые вопросы</p>
+        </a>
+        <a href="">
+          <p>О нас</p>
+        </a>
+      </div>
+    </div>
+    <div class="footer-contacts">
+      <div>
+        <h5>Контакты</h5>
+        <a href="">
+          <p>+303133171181</p>
+        </a>
+        <a href="mailto:findmyjob@gmail.com">
+          <p>findmyjob@gmail.com</p>
+        </a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li>
+          <a href="">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src=""></script>
+</body>
 </html>
