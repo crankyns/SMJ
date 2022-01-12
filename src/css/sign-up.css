@@ -88,11 +88,11 @@
   justify-content: space-between;
 }
 
-.name-input, .surname-input, .user-set-inputs-raw .login-input, .user-set-inputs-raw .password-input {
+.name-input, .surname-input, .user-set-inputs-raw .login-input, .user-set-inputs-raw .e-mail-input,  .user-set-inputs-raw .password-input, .user-set-inputs-raw .password-repeat-input {
   width: 48%;
 }
 
-.name-label, .surname-label, .user-set-inputs-raw .login-input .login-label, .user-set-inputs-raw .password-input .password-label {
+.name-label, .surname-label, .user-set-inputs-raw .login-input .login-label, .user-set-inputs-raw .e-mail-input .e-mail-label, .user-set-inputs-raw .password-input .password-label, .user-set-inputs-raw .password-repeat-input .password-repeat-label {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -100,19 +100,19 @@
   justify-content: space-between;
 }
 
-.name-input-label, .surname-input-label, .user-set-inputs-raw .login-input .login-label .login-input-label, .user-set-inputs-raw .password-input .password-label .password-input-label  {
+.name-input-label, .surname-input-label, .user-set-inputs-raw .login-input .login-label .login-input-label, .user-set-inputs-raw .e-mail-input .e-mail-label .e-mail-input-label, .user-set-inputs-raw .password-input .password-label .password-input-label,  .user-set-inputs-raw .password-repeat-input .password-repeat-label .password-repeat-input-label   {
   font-size: 16px;
   font-weight: 400;
   color: #333333;
 }
 
-.more-info-username, .more-info-user-surname, .user-set-inputs-raw .login-input .login-label .more-info-login, .user-set-inputs-raw .password-input .password-label .more-info-password {
+.more-info-username, .more-info-user-surname, .user-set-inputs-raw .login-input .login-label .more-info-login, .user-set-inputs-raw .e-mail-input .e-mail-label .more-info-e-mail, .user-set-inputs-raw .password-input .password-label .more-info-password,  .user-set-inputs-raw .password-repeat-input .password-repeat-label .more-info-password-repeat {
   font-size: 12px;
   opacity: 0.2;
   cursor: pointer;
 }
 
-#user-name-input, #user-surname-input, .user-set-inputs-raw .login-input #login-input, .user-set-inputs-raw .password-input #password-input {
+#user-name-input, #user-surname-input, .user-set-inputs-raw .login-input #login-input, .user-set-inputs-raw .e-mail-input #e-mail-input, .user-set-inputs-raw .password-input #password-input, .user-set-inputs-raw .password-repeat-input #password-repeat-input {
   margin-top: 8px;
   width: 93%;
   border: 1px solid #F8AC18;
@@ -122,11 +122,11 @@
   transition: 0.3s ease;
 }
 
-#user-name-input:focus, #user-surname-input:focus, .user-set-inputs-raw .login-input #login-input:focus, .user-set-inputs-raw .password-input #password-input:focus {
+#user-name-input:focus, #user-surname-input:focus, .user-set-inputs-raw .login-input #login-input:focus,.user-set-inputs-raw .e-mail-input #e-mail-input:focus, .user-set-inputs-raw .password-input #password-input:focus,  .user-set-inputs-raw .password-repeat-input #password-repeat-input:focus {
   border-color:#7709AB;
 }
 
-#user-name-input::placeholder, #user-surname-input::placeholder, .user-set-inputs-raw .login-input #login-input::placeholder, .user-set-inputs-raw .password-input #password-input::placeholder {
+#user-name-input::placeholder, #user-surname-input::placeholder, .user-set-inputs-raw .login-input #login-input::placeholder,.user-set-inputs-raw .e-mail-input #e-mail-input::placeholder, .user-set-inputs-raw .password-input #password-input::placeholder,  .user-set-inputs-raw .password-repeat-input #password-repeat-input::placeholder {
   color: #000;
   opacity: 0.4;
 }
